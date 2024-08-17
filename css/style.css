@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1300px;
+    margin: 2em auto;
+    background-color: #F3F5FC;
+    font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.text {
+    padding: 30px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#alert span {
+    font-size: 12px;
+    color: #726e6e;
+}
+
+#int__text {
+    background-color: #f3f5fc;
+}
+
+#int__text #int__content__text #int__textarea {
+    width: 500px;
+    height: 500px;
+}
+
+#button,#copy {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 64px ;
+    text-align: center;
+    margin: 4px 14px;
+    border-radius: 12px;
+    border: 1.6px solid #0a3871;
+    cursor: pointer;
+}
+
+#button .button#encrypt{
+    background-color: #0a3871;
+    color: #FFF;
+}
+
+#button .button#decrypt{
+    background-color: #d8dfe8;
+    color: #0a3871;
+}
+
+.button#copy{
+    background-color: #d8dfe8;
+    color: #0a3871;
+}
+
+#button .button#encrypt:hover{
+    background-color: #163254;
+}
+
+#button .button#decrypt:hover{
+    background-color: #cddcf0;
+}
+
+.button#copy:hover{
+    background-color: #cddcf0;
+}
+
+#out__text {
+    background-color: #FFF;
+    border-radius: 18px;
+    box-shadow: 5px 10px 18px #888888;
+    width: 250px;
+    height: 550px;
+}
+
+#out__content__text {
+    display: none;
+}
+
+#panel__out__text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subtitle {
+    padding: 5px 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.paragraph {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#out__text #out__content__text #out__textarea {
+    width: 250px;
+    height: 500px;
+}
+
+textarea:focus-visible{
+    outline: none ;
+}
+
+.textarea {
+    border: none;
+    resize: none;
+}
+
+.textarea#int__textarea{
+    background-color: #F3F5FC;
+    font-size: 20px;
+}
+
+.textarea#int__textarea::placeholder{
+    color:  #0a3871;
+    font-size: 20px;
+}
+
+@media(max-width:620px) {
+    #container {
+        margin: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #person{
+        display: none;
+    }
+}
